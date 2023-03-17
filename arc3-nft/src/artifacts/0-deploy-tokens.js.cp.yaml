@@ -1,0 +1,24 @@
+default:
+    timestamp: 1669180111097
+    metadata: {}
+    asa:
+        acsCoinASA:
+            creator: DTITXUE74OY47FRHULARMOVCOTTXM3QDTFF35ZRS2Y7O5M4ZUYMNWD3AJU
+            txId: XS36VIRTHS3PIUOU2LCN35NSS2LBUISRZFUCDM7XP2ZBIJQR6ZWQ
+            assetIndex: 32
+            confirmedRound: 8087
+            assetDef:
+                total: 1000000
+                decimals: 0
+                defaultFrozen: false
+                unitName: ACS
+                url: url
+                note: acs coin
+                manager: null
+                reserve: null
+                freeze: null
+                clawback: null
+                name: acsCoinASA
+            deleted: false
+    ssc: {}
+    dLsig: {}
