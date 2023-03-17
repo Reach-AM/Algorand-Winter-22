@@ -1,0 +1,624 @@
+filename: holdings_approval.py
+timestamp: 1670953243
+compiled: BiAFAQACBOgHJgIFUHJpY2ULVGVzbGFDb2luSUQxGCMSQAE5MRkjEkAASDEZIhJAADQxGYEFEkAAITEZJRJAAA8xGSQSQAABACIjiAEdIkMiI4gBFjEAMgkSQyIjiAELMQAyCRJDIiOIAQAxADEYYUQiQzYaAIAKQXNzZXRPcHRJbhJAAKI2GgCAClNlbGxUb2tlbnMSQAAoNhoAgAtVcGRhdGVQcmljZRJAAAEAIiSIALgxADIJEkQoNhoBF2ciQyQkiAClMwAQIhJEMwEQgQYSRDMACChkNhoBFwshBAgSRDMABzIKEkQpZDYwABJEMgo2MABwADUDNQIjNhoBFww2GgEXIQQMEDYaARc0Ag4QRLElshAxALIUNhoBF7ISNjAAshGzIkMiIogAPjEAMgkSRClkNjAAEkQyCjYwAHAANQE1ADQBIxJEsSWyEDIKshQjshI2MACyEbMiQyk2MABnKIHAlrECZyJDNQU1BDEgMgMSRDEJMgMSRDEVMgMSRDIENAQSRDEbNAUSRIk=
+compiledHash: Y3RXKLY5TUXZUNDM5YZVJKFCHWB6WIBNAUFW7ZYPYKQOVXGAGDQF3ILSGE
+srcHash: 2769356003
+base64ToBytes:
+    - 6
+    - 32
+    - 5
+    - 1
+    - 0
+    - 2
+    - 4
+    - 232
+    - 7
+    - 38
+    - 2
+    - 5
+    - 80
+    - 114
+    - 105
+    - 99
+    - 101
+    - 11
+    - 84
+    - 101
+    - 115
+    - 108
+    - 97
+    - 67
+    - 111
+    - 105
+    - 110
+    - 73
+    - 68
+    - 49
+    - 24
+    - 35
+    - 18
+    - 64
+    - 1
+    - 57
+    - 49
+    - 25
+    - 35
+    - 18
+    - 64
+    - 0
+    - 72
+    - 49
+    - 25
+    - 34
+    - 18
+    - 64
+    - 0
+    - 52
+    - 49
+    - 25
+    - 129
+    - 5
+    - 18
+    - 64
+    - 0
+    - 33
+    - 49
+    - 25
+    - 37
+    - 18
+    - 64
+    - 0
+    - 15
+    - 49
+    - 25
+    - 36
+    - 18
+    - 64
+    - 0
+    - 1
+    - 0
+    - 34
+    - 35
+    - 136
+    - 1
+    - 29
+    - 34
+    - 67
+    - 34
+    - 35
+    - 136
+    - 1
+    - 22
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 67
+    - 34
+    - 35
+    - 136
+    - 1
+    - 11
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 67
+    - 34
+    - 35
+    - 136
+    - 1
+    - 0
+    - 49
+    - 0
+    - 49
+    - 24
+    - 97
+    - 68
+    - 34
+    - 67
+    - 54
+    - 26
+    - 0
+    - 128
+    - 10
+    - 65
+    - 115
+    - 115
+    - 101
+    - 116
+    - 79
+    - 112
+    - 116
+    - 73
+    - 110
+    - 18
+    - 64
+    - 0
+    - 162
+    - 54
+    - 26
+    - 0
+    - 128
+    - 10
+    - 83
+    - 101
+    - 108
+    - 108
+    - 84
+    - 111
+    - 107
+    - 101
+    - 110
+    - 115
+    - 18
+    - 64
+    - 0
+    - 40
+    - 54
+    - 26
+    - 0
+    - 128
+    - 11
+    - 85
+    - 112
+    - 100
+    - 97
+    - 116
+    - 101
+    - 80
+    - 114
+    - 105
+    - 99
+    - 101
+    - 18
+    - 64
+    - 0
+    - 1
+    - 0
+    - 34
+    - 36
+    - 136
+    - 0
+    - 184
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 68
+    - 40
+    - 54
+    - 26
+    - 1
+    - 23
+    - 103
+    - 34
+    - 67
+    - 36
+    - 36
+    - 136
+    - 0
+    - 165
+    - 51
+    - 0
+    - 16
+    - 34
+    - 18
+    - 68
+    - 51
+    - 1
+    - 16
+    - 129
+    - 6
+    - 18
+    - 68
+    - 51
+    - 0
+    - 8
+    - 40
+    - 100
+    - 54
+    - 26
+    - 1
+    - 23
+    - 11
+    - 33
+    - 4
+    - 8
+    - 18
+    - 68
+    - 51
+    - 0
+    - 7
+    - 50
+    - 10
+    - 18
+    - 68
+    - 41
+    - 100
+    - 54
+    - 48
+    - 0
+    - 18
+    - 68
+    - 50
+    - 10
+    - 54
+    - 48
+    - 0
+    - 112
+    - 0
+    - 53
+    - 3
+    - 53
+    - 2
+    - 35
+    - 54
+    - 26
+    - 1
+    - 23
+    - 12
+    - 54
+    - 26
+    - 1
+    - 23
+    - 33
+    - 4
+    - 12
+    - 16
+    - 54
+    - 26
+    - 1
+    - 23
+    - 52
+    - 2
+    - 14
+    - 16
+    - 68
+    - 177
+    - 37
+    - 178
+    - 16
+    - 49
+    - 0
+    - 178
+    - 20
+    - 54
+    - 26
+    - 1
+    - 23
+    - 178
+    - 18
+    - 54
+    - 48
+    - 0
+    - 178
+    - 17
+    - 179
+    - 34
+    - 67
+    - 34
+    - 34
+    - 136
+    - 0
+    - 62
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 68
+    - 41
+    - 100
+    - 54
+    - 48
+    - 0
+    - 18
+    - 68
+    - 50
+    - 10
+    - 54
+    - 48
+    - 0
+    - 112
+    - 0
+    - 53
+    - 1
+    - 53
+    - 0
+    - 52
+    - 1
+    - 35
+    - 18
+    - 68
+    - 177
+    - 37
+    - 178
+    - 16
+    - 50
+    - 10
+    - 178
+    - 20
+    - 35
+    - 178
+    - 18
+    - 54
+    - 48
+    - 0
+    - 178
+    - 17
+    - 179
+    - 34
+    - 67
+    - 41
+    - 54
+    - 48
+    - 0
+    - 103
+    - 40
+    - 129
+    - 192
+    - 150
+    - 177
+    - 2
+    - 103
+    - 34
+    - 67
+    - 53
+    - 5
+    - 53
+    - 4
+    - 49
+    - 32
+    - 50
+    - 3
+    - 18
+    - 68
+    - 49
+    - 9
+    - 50
+    - 3
+    - 18
+    - 68
+    - 49
+    - 21
+    - 50
+    - 3
+    - 18
+    - 68
+    - 50
+    - 4
+    - 52
+    - 4
+    - 18
+    - 68
+    - 49
+    - 27
+    - 52
+    - 5
+    - 18
+    - 68
+    - 137
+tealCode: |
+    #pragma version 6
+    txn ApplicationID
+    int 0
+    ==
+    bnz main_l18
+    txn OnCompletion
+    int NoOp
+    ==
+    bnz main_l11
+    txn OnCompletion
+    int OptIn
+    ==
+    bnz main_l10
+    txn OnCompletion
+    int DeleteApplication
+    ==
+    bnz main_l9
+    txn OnCompletion
+    int UpdateApplication
+    ==
+    bnz main_l8
+    txn OnCompletion
+    int CloseOut
+    ==
+    bnz main_l7
+    err
+    main_l7:
+    int 1
+    int 0
+    callsub securityCheck_0
+    int 1
+    return
+    main_l8:
+    int 1
+    int 0
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    return
+    main_l9:
+    int 1
+    int 0
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    return
+    main_l10:
+    int 1
+    int 0
+    callsub securityCheck_0
+    txn Sender
+    txn ApplicationID
+    app_opted_in
+    assert
+    int 1
+    return
+    main_l11:
+    txna ApplicationArgs 0
+    byte "AssetOptIn"
+    ==
+    bnz main_l17
+    txna ApplicationArgs 0
+    byte "SellTokens"
+    ==
+    bnz main_l16
+    txna ApplicationArgs 0
+    byte "UpdatePrice"
+    ==
+    bnz main_l15
+    err
+    main_l15:
+    int 1
+    int 2
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    assert
+    byte "Price"
+    txna ApplicationArgs 1
+    btoi
+    app_global_put
+    int 1
+    return
+    main_l16:
+    int 2
+    int 2
+    callsub securityCheck_0
+    gtxn 0 TypeEnum
+    int pay
+    ==
+    assert
+    gtxn 1 TypeEnum
+    int appl
+    ==
+    assert
+    gtxn 0 Amount
+    byte "Price"
+    app_global_get
+    txna ApplicationArgs 1
+    btoi
+    *
+    int 1000
+    +
+    ==
+    assert
+    gtxn 0 Receiver
+    global CurrentApplicationAddress
+    ==
+    assert
+    byte "TeslaCoinID"
+    app_global_get
+    txna Assets 0
+    ==
+    assert
+    global CurrentApplicationAddress
+    txna Assets 0
+    asset_holding_get AssetBalance
+    store 3
+    store 2
+    int 0
+    txna ApplicationArgs 1
+    btoi
+    <
+    txna ApplicationArgs 1
+    btoi
+    int 1000
+    <
+    &&
+    txna ApplicationArgs 1
+    btoi
+    load 2
+    <=
+    &&
+    assert
+    itxn_begin
+    int axfer
+    itxn_field TypeEnum
+    txn Sender
+    itxn_field AssetReceiver
+    txna ApplicationArgs 1
+    btoi
+    itxn_field AssetAmount
+    txna Assets 0
+    itxn_field XferAsset
+    itxn_submit
+    int 1
+    return
+    main_l17:
+    int 1
+    int 1
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    assert
+    byte "TeslaCoinID"
+    app_global_get
+    txna Assets 0
+    ==
+    assert
+    global CurrentApplicationAddress
+    txna Assets 0
+    asset_holding_get AssetBalance
+    store 1
+    store 0
+    load 1
+    int 0
+    ==
+    assert
+    itxn_begin
+    int axfer
+    itxn_field TypeEnum
+    global CurrentApplicationAddress
+    itxn_field AssetReceiver
+    int 0
+    itxn_field AssetAmount
+    txna Assets 0
+    itxn_field XferAsset
+    itxn_submit
+    int 1
+    return
+    main_l18:
+    byte "TeslaCoinID"
+    txna Assets 0
+    app_global_put
+    byte "Price"
+    int 5000000
+    app_global_put
+    int 1
+    return
+
+    // securityCheck
+    securityCheck_0:
+    store 5
+    store 4
+    txn RekeyTo
+    global ZeroAddress
+    ==
+    assert
+    txn CloseRemainderTo
+    global ZeroAddress
+    ==
+    assert
+    txn AssetCloseTo
+    global ZeroAddress
+    ==
+    assert
+    global GroupSize
+    load 4
+    ==
+    assert
+    txn NumAppArgs
+    load 5
+    ==
+    assert
+    retsub

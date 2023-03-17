@@ -1,0 +1,353 @@
+filename: burn_approval.py
+timestamp: 1670953264
+compiled: BiADAQAEJgELVGVzbGFDb2luSUQxGCMSQACVMRkjEkAAOjEZIhJAADExGYEFEkAAHjEZJBJAABAxGYECEkAAAQAiI4gAcSJDIiOIAGojQyIjiABjMQAyCRJDI0MiIogAVjEAMgkSRDYaAIAKQXNzZXRPcHRJbhJAAAEAIiKIADcxADIJEkQoZDYwABJEMgo2MABwADUBNQA0ASMSRLEkshAyCrIUI7ISNjAAshGzIkMoNjAAZyJDNQM1AjEgMgMSRDEJMgMSRDEVMgMSRDIENAISRDEbNAMSRIk=
+compiledHash: HRWVLEMDMHXKUEQOMXV2CVCUQSQXKZYVM4MKWIVGCD7JBUK2TSLZACO5WE
+srcHash: 1802144056
+base64ToBytes:
+    - 6
+    - 32
+    - 3
+    - 1
+    - 0
+    - 4
+    - 38
+    - 1
+    - 11
+    - 84
+    - 101
+    - 115
+    - 108
+    - 97
+    - 67
+    - 111
+    - 105
+    - 110
+    - 73
+    - 68
+    - 49
+    - 24
+    - 35
+    - 18
+    - 64
+    - 0
+    - 149
+    - 49
+    - 25
+    - 35
+    - 18
+    - 64
+    - 0
+    - 58
+    - 49
+    - 25
+    - 34
+    - 18
+    - 64
+    - 0
+    - 49
+    - 49
+    - 25
+    - 129
+    - 5
+    - 18
+    - 64
+    - 0
+    - 30
+    - 49
+    - 25
+    - 36
+    - 18
+    - 64
+    - 0
+    - 16
+    - 49
+    - 25
+    - 129
+    - 2
+    - 18
+    - 64
+    - 0
+    - 1
+    - 0
+    - 34
+    - 35
+    - 136
+    - 0
+    - 113
+    - 34
+    - 67
+    - 34
+    - 35
+    - 136
+    - 0
+    - 106
+    - 35
+    - 67
+    - 34
+    - 35
+    - 136
+    - 0
+    - 99
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 67
+    - 35
+    - 67
+    - 34
+    - 34
+    - 136
+    - 0
+    - 86
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 68
+    - 54
+    - 26
+    - 0
+    - 128
+    - 10
+    - 65
+    - 115
+    - 115
+    - 101
+    - 116
+    - 79
+    - 112
+    - 116
+    - 73
+    - 110
+    - 18
+    - 64
+    - 0
+    - 1
+    - 0
+    - 34
+    - 34
+    - 136
+    - 0
+    - 55
+    - 49
+    - 0
+    - 50
+    - 9
+    - 18
+    - 68
+    - 40
+    - 100
+    - 54
+    - 48
+    - 0
+    - 18
+    - 68
+    - 50
+    - 10
+    - 54
+    - 48
+    - 0
+    - 112
+    - 0
+    - 53
+    - 1
+    - 53
+    - 0
+    - 52
+    - 1
+    - 35
+    - 18
+    - 68
+    - 177
+    - 36
+    - 178
+    - 16
+    - 50
+    - 10
+    - 178
+    - 20
+    - 35
+    - 178
+    - 18
+    - 54
+    - 48
+    - 0
+    - 178
+    - 17
+    - 179
+    - 34
+    - 67
+    - 40
+    - 54
+    - 48
+    - 0
+    - 103
+    - 34
+    - 67
+    - 53
+    - 3
+    - 53
+    - 2
+    - 49
+    - 32
+    - 50
+    - 3
+    - 18
+    - 68
+    - 49
+    - 9
+    - 50
+    - 3
+    - 18
+    - 68
+    - 49
+    - 21
+    - 50
+    - 3
+    - 18
+    - 68
+    - 50
+    - 4
+    - 52
+    - 2
+    - 18
+    - 68
+    - 49
+    - 27
+    - 52
+    - 3
+    - 18
+    - 68
+    - 137
+tealCode: |
+    #pragma version 6
+    txn ApplicationID
+    int 0
+    ==
+    bnz main_l14
+    txn OnCompletion
+    int NoOp
+    ==
+    bnz main_l11
+    txn OnCompletion
+    int OptIn
+    ==
+    bnz main_l10
+    txn OnCompletion
+    int DeleteApplication
+    ==
+    bnz main_l9
+    txn OnCompletion
+    int UpdateApplication
+    ==
+    bnz main_l8
+    txn OnCompletion
+    int CloseOut
+    ==
+    bnz main_l7
+    err
+    main_l7:
+    int 1
+    int 0
+    callsub securityCheck_0
+    int 1
+    return
+    main_l8:
+    int 1
+    int 0
+    callsub securityCheck_0
+    int 0
+    return
+    main_l9:
+    int 1
+    int 0
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    return
+    main_l10:
+    int 0
+    return
+    main_l11:
+    int 1
+    int 1
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    assert
+    txna ApplicationArgs 0
+    byte "AssetOptIn"
+    ==
+    bnz main_l13
+    err
+    main_l13:
+    int 1
+    int 1
+    callsub securityCheck_0
+    txn Sender
+    global CreatorAddress
+    ==
+    assert
+    byte "TeslaCoinID"
+    app_global_get
+    txna Assets 0
+    ==
+    assert
+    global CurrentApplicationAddress
+    txna Assets 0
+    asset_holding_get AssetBalance
+    store 1
+    store 0
+    load 1
+    int 0
+    ==
+    assert
+    itxn_begin
+    int axfer
+    itxn_field TypeEnum
+    global CurrentApplicationAddress
+    itxn_field AssetReceiver
+    int 0
+    itxn_field AssetAmount
+    txna Assets 0
+    itxn_field XferAsset
+    itxn_submit
+    int 1
+    return
+    main_l14:
+    byte "TeslaCoinID"
+    txna Assets 0
+    app_global_put
+    int 1
+    return
+
+    // securityCheck
+    securityCheck_0:
+    store 3
+    store 2
+    txn RekeyTo
+    global ZeroAddress
+    ==
+    assert
+    txn CloseRemainderTo
+    global ZeroAddress
+    ==
+    assert
+    txn AssetCloseTo
+    global ZeroAddress
+    ==
+    assert
+    global GroupSize
+    load 2
+    ==
+    assert
+    txn NumAppArgs
+    load 3
+    ==
+    assert
+    retsub
